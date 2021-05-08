@@ -9,6 +9,7 @@
         <module name="eureka-server" />
         <module name="cloud-wxy" />
         <module name="eureka-client" />
+        <module name="eureka-server2" />
         <module name="service-feign" />
         <module name="eureka-client2" />
         <module name="eureka-ribbon" />
@@ -21,6 +22,7 @@
       <module name="eureka-client2" options="-parameters" />
       <module name="eureka-ribbon" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
+      <module name="eureka-server2" options="-parameters" />
       <module name="service-feign" options="-parameters" />
     </option>
   </component>

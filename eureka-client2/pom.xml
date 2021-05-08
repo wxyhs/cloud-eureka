@@ -35,6 +35,13 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <!--hystrix-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
+
     </dependencies>
     <dependencyManagement>
         <dependencies>

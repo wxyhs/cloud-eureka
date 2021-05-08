@@ -2,7 +2,6 @@ package com.wxy.servicefeign.service;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @Component
 @FeignClient(value = "eureka-client")
-public interface FeignDaoService {
+public interface FeignService {
 
     /**
      * 调用 eureka-client服务的 /sayHello方法

@@ -1,6 +1,6 @@
 package com.wxy.servicefeign.controller;
 
-import com.wxy.servicefeign.service.FeignDaoService;
+import com.wxy.servicefeign.service.FeignService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class FeignDaoController {
     private static Logger logger = LoggerFactory.getLogger(FeignDaoController.class);
 
     @Autowired
-    FeignDaoService feignDaoService;
+    FeignService feignService;
 
     /**
      * Test远程调用
@@ -29,6 +29,6 @@ public class FeignDaoController {
     @GetMapping("/feignSayHello")
     public String sayHi(@RequestParam String name){
         logger.info("Feign开始进行远程调用---------------->参数为：{}",name);
-        return feignDaoService.sayHeiFromClient(name);
+        return feignService.sayHeiFromClient(name);
     }
 }
