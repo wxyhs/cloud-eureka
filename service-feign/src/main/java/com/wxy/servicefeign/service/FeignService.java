@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @Date created in 11:57 2021/4/30
  */
 @Component
-@FeignClient(value = "eureka-client")
+@FeignClient(value = "eureka-client",fallbackFactory = FeignServiceHystrix.class)
 public interface FeignService {
 
     /**
