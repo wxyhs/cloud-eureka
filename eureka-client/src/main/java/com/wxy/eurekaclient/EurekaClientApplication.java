@@ -10,6 +10,7 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
  */
 @EnableEurekaClient
 @SpringBootApplication
+//启动熔断降级服务
 @EnableHystrix
 public class EurekaClientApplication {
 
